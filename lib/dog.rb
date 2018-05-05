@@ -32,8 +32,8 @@ class Dog
 
   def save
       if self.id
-          sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
-          DB[:conn].execute(sql, self.name, self.grade, self.id)
+          sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
+          DB[:conn].execute(sql, self.name, self.breed, self.id)
       else
           sql = <<-SQL
             INSERT INTO students (name, grade)
