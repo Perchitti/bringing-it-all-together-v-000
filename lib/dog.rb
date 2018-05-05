@@ -57,11 +57,11 @@ class Dog
 
   def self.find_by_name(name)
       sql = <<-SQL
-      SELECT * FROM students
+      SELECT * FROM dogs
       WHERE name = ?;
       SQL
-      student_found = DB[:conn].execute(sql, name).first
-      self.new_from_db(student_found)
+      dog_found = DB[:conn].execute(sql, name).first
+      self.new_from_db(dog_found)
   end
 
   def update
