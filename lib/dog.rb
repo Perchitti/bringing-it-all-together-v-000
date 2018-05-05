@@ -3,15 +3,15 @@ require 'pry'
 
 class Dog
 
-    attr_accessor :id, :name, :grade
+    attr_accessor :id, :name, :breed
 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
 
-  def initialize(id=nil, name, grade)
+  def initialize(id=nil, name, breed)
       @id = id
       @name = name
-      @grade = grade
+      @breed = breed
   end
 
   def self.create_table
