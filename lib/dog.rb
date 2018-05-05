@@ -66,7 +66,6 @@ class Dog
 
   def update
       self.save
-
   end
 
 end
